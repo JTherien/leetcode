@@ -37,7 +37,7 @@ class Solution:
             reversed_mag = (10 ** n[0])
 
             # Using the list index, find the number's new "position"
-            original_mag_num = int(num_in / original_mag) * original_mag
+            original_mag_num = int(num_in - (num_in % original_mag))
             reversed_mag_num = original_mag_num / original_mag * reversed_mag
 
             num_in -= original_mag_num
